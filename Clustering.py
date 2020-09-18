@@ -15,18 +15,12 @@ st.write(""" ### This app is powered by Machine Learning and uses *K-Means clust
 st.write('---')
 
 st.sidebar.title('User Input Features')
-uploaded_file  = st.sidebar.file_uploader("Upload your input CSV file (NUMERIC DATA ONLY)", type=["csv"])
-st.set_option('deprecation.showfileUploaderEncoding', False)
 
 dataset = st.sidebar.selectbox(" OR Choose from these datasets", ["Cars Dataset","Credit Card Dataset","Iris Dataset","Wine Dataset"])
 VAL = st.sidebar.slider('Number of Clusters', 2, 6)
 
 
-if uploaded_file is not None:
-    X = pd.read_csv(uploaded_file)
-    X = X.dropna()
-
-elif dataset == "Iris Dataset" :
+if dataset == "Iris Dataset" :
 	dataset = pd.read_csv('https://github.com/SiddhanthNB/clustering-app/raw/master/Dataset/iris.csv')
 	X = dataset.copy()
 	X = X.dropna()
