@@ -15,7 +15,6 @@ st.write(""" ### This app is powered by Machine Learning and uses *K-Means clust
 st.write('---')
 
 st.sidebar.title('User Input Features')
-st.set_option('deprecation.showfileUploaderEncoding', False)
 uploaded_file  = st.sidebar.file_uploader("Upload your input CSV file (NUMERIC DATA ONLY)", type=["csv"])
 st.set_option('deprecation.showfileUploaderEncoding', False)
 
