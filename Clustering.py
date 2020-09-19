@@ -27,7 +27,7 @@ if dataset == "Iris Dataset" :
 	X = X.drop(['Species'], axis = 1)
 
 	st.write(""" 
-				#### About the dataset:
+				#### About the Iris Dataset:
 				The Iris dataset was used in R.A. Fisher's classic 1936 paper, The Use of Multiple Measurements in Taxonomic Problems, and can also be found on the UCI Machine Learning Repository.
 
 				It includes three iris species with 50 samples each as well as some properties about each flower. One flower species is linearly separable from the other two, but the other two are not linearly separable from each other.
@@ -40,7 +40,7 @@ elif dataset == "Wine Dataset" :
 	y = X.pop("Proline") 
 
 	st.write(""" 
-				#### About the dataset:
+				#### About the Wine Dataset:
 				The data set that we are going to analyze in this post is a result of a chemical analysis of wines grown in a particular region in Italy but derived from three different cultivars. The analysis determined the quantities of 13 constituents found in each of the three types of wines. The attributes are: Alcohol, Malic acid, Ash, Alcalinity of ash, Magnesium, Total phenols, Flavanoids, Nonflavanoid phenols, Proanthocyanins, Color intensity, Hue, OD280/OD315 of diluted wines, and Proline. The data set has 178 observations and no missing values.
 				""")
 	st.write('---')
@@ -51,7 +51,7 @@ elif dataset == "Cars Dataset" :
 	y = X.pop("brand")
 
 	st.write(""" 
-				#### About the dataset:
+				#### About the Cars Dataset:
 				Cars Data has Information about 3 brands/make of cars. Namely US, Japan, Europe. Target of the data set to find the brand of a car using the parameters such as horsepower, Cubic inches, Make year, etc.
 				""")
 	st.write('---')
@@ -63,7 +63,7 @@ elif dataset == "Credit Card Dataset" :
 	X = X.drop(['CUST_ID'], axis = 1)
 
 	st.write(""" 
-				#### About the dataset:
+				#### About the Credit Card Dataset:
 				This Dataset summarizes the usage behavior of about 9000 active credit card holders during the last 6 months. The file is at a customer level with 18 behavioral variables. And it is used to develop a customer segmentation to define marketing strategy.
 				""")
 	st.write('---')
