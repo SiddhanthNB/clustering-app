@@ -16,7 +16,7 @@ st.write('---')
 
 st.sidebar.title('User Input Features')
 
-dataset = st.sidebar.selectbox(" OR Choose from these datasets", ["Cars Dataset","Credit Card Dataset","Iris Dataset","Wine Dataset"])
+dataset = st.sidebar.selectbox("Choose from these datasets", ["Cars Dataset","Credit Card Dataset","Iris Dataset","Wine Dataset"])
 VAL = st.sidebar.slider('Number of Clusters', 2, 6)
 
 
